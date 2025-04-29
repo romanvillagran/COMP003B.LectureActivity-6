@@ -13,7 +13,7 @@ namespace COMP003B.LectureActivity_6
             builder.Services.AddControllersWithViews();
 
             builder.Services.AddDbContext<WebDevAcademyContext>(options => 
-                options.UseSqlServer("Name=ConnectionsStrings:DefaultConnection"));
+                options.UseSqlServer("Name=ConnectionStrings:DefaultConnection"));
 
             var app = builder.Build();
 
